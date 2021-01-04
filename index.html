@@ -6,6 +6,7 @@
 <link href="/normalize.css" rel="stylesheet">
 <style>
 	
+	//header code
   .header{
   text-align: center;
   background-size: cover;
@@ -13,7 +14,8 @@
   color: white;
   
   }
- .gfg { 
+	// image div
+ .charts { 
                 width:auto; 
                 text-align:center; 
                 padding:20px; 
@@ -23,6 +25,7 @@
                         height:auto; 
             } 
     
+	// highcharts
 .highcharts-figure, .highcharts-data-table table {
     min-width: 320px; 
     max-width: 800px;
@@ -56,7 +59,7 @@
 .highcharts-data-table tr:hover {
     background: #f1f7ff;
 }
-	
+	// highcharts
 #container1 {
     height: 400px; 
 }
@@ -98,18 +101,24 @@
 </style>
 </head>
 
+	
 <body>
 
+	//Infogram
+	<div class = "charts"
 <iframe src="https://infogram.com/untitled-infographic-1h706ep8dze545y?live" width = "700" height = "2457">
 </iframe>
+	</div>
 
-<div class = "gfg"> 
+	//Heat map Tableau
+<div class = "charts"> 
 <img src = "heatmap.mov" alt ="Responsive-image" width = "700" height = "2457"></img>
 	</div>
 
-<div class = "heatmap"> </div>
+//<div class = "heatmap"> </div>
 
 
+	//Highcharts round
 
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/highcharts-more.js"></script>
@@ -124,6 +133,7 @@
     </p>
 </figure>
 	
+	// highcharts area
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
@@ -141,13 +151,9 @@
 </figure>
 
 
-
- 
-
-
-
 <script>
 // Parse the data from an inline table using the Highcharts Data plugin
+	// highcharts round
 Highcharts.chart('container', {
     chart: {
         type: 'packedbubble',
@@ -404,6 +410,7 @@ Highcharts.chart('container', {
     }]
 });
 
+	//highcharts area
 const chart = Highcharts.chart('container1', {
    chart: {
         type: 'areaspline'
@@ -490,10 +497,7 @@ document.getElementById('large').addEventListener('click', () => {
     chart.setSize(600, 300);
 });
 
-
 </script>
-
-
 
 </body>
 </html>
