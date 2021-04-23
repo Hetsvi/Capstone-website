@@ -1,1 +1,1 @@
-School senior thesis capstone project website
+School Visualiz website
